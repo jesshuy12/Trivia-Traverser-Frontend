@@ -115,7 +115,7 @@ const readyQuiz = function() {
   }
 
   function postScore(username, score) {
-    fetch('http://localhost:3000/statistics', {
+    fetch('https://enigmatic-taiga-84848.herokuapp.com/statistics', {
       method: "POST",
       headers: {
         'Content-Type': 'application/json'

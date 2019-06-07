@@ -191,7 +191,7 @@ function startGame() {
 
 function fetchData() {
   // for each new game fetch and store all the questions
-  fetch(`http://localhost:3000/questions`
+  fetch(`https://enigmatic-taiga-84848.herokuapp.com/questions`
   )
   .then(res => res.json())
   .then(data => {
@@ -268,7 +268,7 @@ function updateGameArea() {
   }//end of updateGameArea
 
 function fetchScores() {
-  fetch('http://localhost:3000/statistics')
+  fetch('https://enigmatic-taiga-84848.herokuapp.com/statistics')
   .then(res => res.json())
   .then(scores => {
     topTen = scores
