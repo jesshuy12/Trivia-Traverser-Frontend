@@ -1,0 +1,41 @@
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/modal.css" />
+  </head>
+
+  <div id="header">
+    <div class="thetitle">
+    <a id="logo">Trivia Traverser</a>
+    </div>
+    <div class="themenu">
+    <ul id="menu">
+      <li><a id="play"><span>Play</span></a></li>
+      <li><a id="instructions"><span>instructions</span></a></li>
+      <li><a id="scores"><span>Scores</span></a></li>
+      <li><a id="about"><span>About</span></a></li>
+    </ul>
+    </div>
+  </div>
+
+    <body>
+      <canvas id="canvas" width="960" height="540"></canvas>
+
+      <div class="modal" style="display: none">
+        <div class="overlay"></div>
+        <div class="modal_content">
+          <div class="quiz-container">
+            <div id="quiz"></div>
+          </div>
+          <br>
+          <div id="results"></div>
+          <button title="Close" class="close_modal">
+            <i class="fas fa-times"></i>
+          </button>
+        </div>
+      </div>
+      <script src="src/index.js" defer></script>
+      <script src="src/modal.js" defer></script>
+    </body>
+</html>
